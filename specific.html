@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <svg id="backBtn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M19 7v6c0 1.103-.896 2-2 2H3v-3h13V8H5v2L1 6.5L5 3v2h12a2 2 0 0 1 2 2z"/></svg>
+            <p>Manga</p>
+            <svg style="visibility: hidden;"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M19 7v6c0 1.103-.896 2-2 2H3v-3h13V8H5v2L1 6.5L5 3v2h12a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="content">
+            <div class="content_images">
+                
+            </div>
+            <div class="description">
+                <h3 id="mangaTitle"></h3>
+                <p id="mangaRating"></p>
+                <p id="mangaStatus"></p>
+            </div>
+        </div>
+        <div class="information">
+            <h3>About</h3>
+            <p id="mangaDescription"></p>
+            <h3>Authors</h3>
+            <div class="authors">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        const backBtn = document.getElementById('backBtn');
+        backBtn.addEventListener('click', function(){
+            window.location.href="index.html"
+        })
+    </script>
+    <script src="specific_script.js"></script>
+</body>
+</html>
